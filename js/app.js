@@ -154,3 +154,5 @@ const toggleSpinner = (isLoading) => {
         document.getElementById("spinner").classList.add("d-none");
     }
 }
+
+loadNews('01', 'Breaking News');
