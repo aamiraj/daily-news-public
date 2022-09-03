@@ -1,0 +1,32 @@
+.iris {
+    color: #5D5FEF;
+}
+
+.bg-iris {
+    background-color: #5D5FEF;
+}
+
+.border-iris {
+    border: #5D5FEF 1px solid;
+}
+
+.list-decoration-none {
+    list-style: none;
+}
+
+.profile-image {
+    width: 4rem;
+    border-radius: 50%;
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .w-lg-25 {
+        max-width: 25%;
+    }
+
+    .w-lg-75 {
+        max-width: 75%;
+    }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/0edd04d7f7.js" crossorigin="anonymous"></script>
+    <title>Daily News | Always Keep You Updated</title>
+</head>
+
+<body class="bg-light">
+    <header class="container">
+        <!-- navigation area  -->
+        <nav class="navbar navbar-expand-sm navbar-light border-bottom">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold iris" href="index.html" aria-current="page">News <span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold iris" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container my-3">
+            <h2 class="text-center">Know The Differences</h2>
+            <h3 class="text-center">Clear your confusions between these keywords/methods</h3>
+            <div class="my-5">
+                <h4><code>var, let, const</code> : when to use what</h4>
+                <p>The scope of <code>var</code> variable is functional scope. On the other hand, <code>let</code> and
+                    <code>const</code>
+                    variables have block scope. <code>var</code> variable can be updated and redeclared in the scope. On
+                    contrast, <code>let</code> variable can be updated but cannot be redeclared. And <code>const</code>
+                    variable cannot be updated or redeclared in the scope. <code>var</code>, <code>let</code> variable
+                    can be
+                    declared without initialization, but <code>const</code> variable cannot be declared without
+                    initialization.
+                </p>
+            </div>
+            <hr>
+            <div class="my-5">
+                <h4>Regular function vs Arrow function</h4>
+                <p>Arrow function is a new feature introduced in ES6 that is a more
+                    compact syntax for writing function expressions. While both regular JavaScript functions and arrow
+                    functions work in a similar manner, there are certain differences between them. Regular function
+                    always starts with <code>function</code> keyword followed by optional function name, parameters in
+                    parentheses and syntex in curly braces. But arrow function use parentheses without
+                    <code>function</code> keyword. Rather it uses <code>() => {}</code> short syntax. Unlike regular
+                    functions, arrow functions do not have their own <code>this</code>. The value of <code>this</code>
+                    inside an arrow function
+                    remains the same throughout the lifecycle of the function and is always bound to the value of
+                    <code>this</code>
+                    in the closest non-arrow parent function. Arrow functions can never have duplicate named parameters,
+                    whether in strict or non-strict mode.
+                </p>
+            </div>
+            <hr>
+            <div class="my-5">
+                <h4><code>map(), forEach(), filter(), find()</code> : Confuse what method to use with array!</h4>
+                <p>All these methods are used to iterate over array and do some actions. However, they have different
+                    functionalities. For
+                    example, The <code>forEach()</code> method calls a function (a callback function) once for each
+                    array element. <code>map()</code> method does the same. But <code>forEach()</code> method does not
+                    return a new array, <code>map()</code> does. Also, <code>map()</code> method does not change the
+                    original array. The <code>filter()</code> method creates a new array with array elements that passes
+                    a test. Inside the callback function, there are some conditional syntax which is performed on each
+                    array element. The <code>find()</code> method returns the value of the first array element that
+                    passes a test function. Notice that <code>filter()</code> returns an array but <code>find()</code>
+                    returns a value.
+                </p>
+            </div>
+            <hr>
+            <div class="my-5">
+                <h4>What is "Template String"?</h4>
+                <p><b>Template string</b> use back-ticks (<code>``</code>) rather than the quotes (<code>""</code>) to
+                    define a string. It was first introduced in ES6. It has many advantages over using quotes. With
+                    template string, we can use both single and double quotes inside a string. It allows
+                    multiline strings. It provides an easy way to interpolate variables and expressions
+                    into strings. The method is called string interpolation. The syntax is - <code>${...}</code>. In
+                    this way it allows us to use variables in strings. It also allows expressions in strings.
+                </p>
+            </div>
+
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
