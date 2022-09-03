@@ -29,12 +29,35 @@ const loadNews = async (category_id, category_name) => {
         const url = `https://openapi.programming-hero.com/api/news/category/${category_id}`;
         const res = await fetch(url);
         const data = await res.json();
+        const sortedNews = sortNews(data.data);
         displayNews(data.data, category_name);
         toggleSpinner(false);
     }
     catch (error) {
         alert("News in category ID not working.");
     }
+}
+
+const sortNews = (news) => {
+    const totalViewArray = [];
+    news.forEach((newsItem) => {
+
+        totalViewArray.push(newsItem.total_view)
+
+    })
+    totalViewArray.sort(function (a, b) { return b - a });
+
+    //sorting news according to view
+    const sortedNews = [];
+    totalViewArray.forEach((totalView) => {
+        news.forEach((newsItem) => {
+            if (newsItem.total_view === totalView) {
+                sortedNews.push(newsItem);
+            }
+        })
+    })
+    console.log(sortedNews);
+    return sortedNews;
 }
 
 //show number of news and name of the category
