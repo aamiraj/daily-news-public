@@ -30,7 +30,7 @@ const loadNews = async (category_id, category_name) => {
         const res = await fetch(url);
         const data = await res.json();
         const sortedNews = sortNews(data.data);
-        displayNews(data.data, category_name);
+        displayNews(sortedNews, category_name);
         toggleSpinner(false);
     }
     catch (error) {
